@@ -1,6 +1,9 @@
 # Explorations of the Iris data set
 
 from sklearn import datasets
+from sklearn.decomposition import PCA
+
+import matplotlib.pyplot as p
 
 iris = datasets.load_iris()
 
@@ -26,4 +29,26 @@ iris.target_names
 
 iris.target[0:5]
 # array([0, 0, 0, 0, 0])
+
+
+x = iris.data
+y = iris.target
+
+
+# ----------
+# PCA
+# ----------
+
+pca = PCA(n_components=2)
+comp = pca.fit(x).transform(x)
+
+p.figure()
+colors = ['red', 'green', 'blue']
+
+for col, i, target_name in zip(colors, [0,1,2], iris.target_names):
+	p.scatter(comp[y==i,0], comp[y==i,1], color=col, label=target_name)
+
+p.title('PCA of Iris dataset')
+p.legend(loc='best', shadow=False, scatterpoints=1)
+p.show()
 
