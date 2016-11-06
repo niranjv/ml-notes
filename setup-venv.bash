@@ -13,3 +13,6 @@ pip install sklearn
 # proceed in notebook
 
 deactivate
+
+# See also venv/bin/frameworkpython
+# to make matplotlib work from Terminal in virtualenv
