@@ -1,12 +1,13 @@
 
 sudo pip install virtualenv
 
+mkdir python
 cd python/
 virtualenv venv
 
 source venv/bin/activate
 
-pip install numpy scipy matplotlib ipython jupyter pandas sympy nose seaborn
+pip install numpy scipy sympy pandas nose ipython jupyter matplotlib seaborn
 pip install sklearn
 
 # jupyter notebook
