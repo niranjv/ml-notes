@@ -1,2 +1,2 @@
 # python
-My experiments with python, pandas, scikit-learn, seaborn, jupyter
+My experiments with python, numpy/pandas, scikit-learn, matplotlib/seaborn, ipython/jupyter
