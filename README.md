@@ -1,2 +1,2 @@
-# sklearn
-My experiments with scikit-learn
+# python
+My experiments with pandas, scikit-learn, seaborn
