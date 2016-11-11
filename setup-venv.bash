@@ -1,4 +1,8 @@
 
+# To install & upgrade pip
+# Install pip: https://pip.pypa.io/en/stable/installing/
+# Upgrade pip: pip install --upgrade pip
+
 sudo pip install virtualenv
 
 mkdir python
