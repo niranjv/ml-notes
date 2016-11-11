@@ -32,8 +32,7 @@ virtualenv venv
 
 source venv/bin/activate
 
-pip install numpy scipy sympy pandas nose ipython jupyter matplotlib seaborn
-pip install sklearn
+pip install scipy sympy numpy pandas nose ipython jupyter matplotlib seaborn sklearn
 
 # jupyter notebook
 # proceed in notebook
