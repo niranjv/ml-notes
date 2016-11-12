@@ -9,7 +9,6 @@ My experiments with python, numpy/pandas, scikit-learn, matplotlib/seaborn, ipyt
 * Spherical clusters
 * Clusters of similar size
 * All clusters have similar variance
-* All clusters have similar scale
 * Sum of Squared Errors is an appropriate clustering metric for the data
 * All clusters are equally likely
 
