@@ -9,7 +9,7 @@ My experiments with python, numpy/pandas, scikit-learn, matplotlib/seaborn, ipyt
 * Spherical clusters
 * Clusters of similar size
 * All clusters have similar variance
-* Sum of Squared Errors is an appropriate clustering metric for the data
+* Sum of Squared Errors (variance) is an appropriate clustering metric for the data
 * All clusters are equally likely
 
 ### Comparison with Gaussian Mixture Models
