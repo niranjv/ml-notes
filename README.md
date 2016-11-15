@@ -3,4 +3,4 @@ My experiments with python, numpy/pandas, scikit-learn, matplotlib/seaborn, ipyt
 
 See README files in sub-dirs for more details
 
-Rendered Jpuyter notebooks can be viewed at http://nbviewer.jupyter.org/github/niranjv/python/
+Rendered Jupyter notebooks can be viewed at http://nbviewer.jupyter.org/github/niranjv/python/
