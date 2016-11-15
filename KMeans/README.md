@@ -1,6 +1,6 @@
-## K-Means
+Rendered Jupyter notebooks: http://nbviewer.jupyter.org/github/niranjv/python/tree/master/KMeans/
 
-### Assumptions
+### K-Means Assumptions
 * Data has only K clusters
 * Spherical clusters
 * Clusters of similar size
