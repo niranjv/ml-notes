@@ -1,14 +1,32 @@
 
-To install & upgrade pip
+# Installpip, virtualenv
 wget https://bootstrap.pypa.io/get-pip.py # Install pip
 sudo python get-pip.py
 pip install --upgrade pip # Upgrade pip
-
 sudo pip install virtualenv
 
-mkdir python
-cd python/
+mkdir ml
+cd ml/
+
+# Create virtualenv for pydata
 virtualenv venv
+source venv/bin/activate
+
+# Install pydata modules
+pip install scipy
+pip install sympy
+pip install numpy
+pip install pandas
+pip install sklearn
+
+pip install nose
+
+pip install ipython
+pip install jupyter
+
+pip install matplotlib
+pip install seaborn
+
 
 # ----------
 # now add a file called venv/bin/frameworkpython to make matplotlib work from Terminal in virtualenv:
@@ -30,11 +48,7 @@ virtualenv venv
 
 # ----------
 
-source venv/bin/activate
-
-pip install scipy sympy numpy pandas nose ipython jupyter matplotlib seaborn sklearn
-
-git clone https://github.com/niranjv/python.git
+git clone https://github.com/niranjv/ml.git
 
 # jupyter notebook
 # proceed in notebook
