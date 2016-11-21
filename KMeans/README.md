@@ -1,17 +1,19 @@
-Rendered Jupyter notebooks: http://nbviewer.jupyter.org/github/niranjv/python/tree/master/KMeans/
+Rendered Jupyter notebooks: http://nbviewer.jupyter.org/github/niranjv/python/tree/master/KMeans/ (GitHub will also render most notebooks)
 
 ### K-Means TODO
-* optimal cluster size (plot # clusters vs. dispersion/inertia)
-* Similar cluster size violation - Unequal spherical cluster size - 1 small cluster with low variance, 1 large cluster with high variance
+Examine performance when K-Means assumptions are violated:
+* No assumption violations - optimal cluster size (plot # clusters vs. dispersion/inertia)
+* Similar cluster size/variance violation - Unequal spherical cluster size - 1 small cluster with low variance, 1 large cluster with high variance
 * Similar cluster size violation - Unequal spherical cluster size - Mickey mouse clusters (https://en.wikipedia.org/wiki/K-means_clustering#/media/File:ClusterAnalysis_Mouse.svg)
 * Isotropic variance violation - Elongated (non-spherical) clusters
 * Isotropic variance violation - 2 half-moons
 * Well-separated clusters violation - Uniform data
-* MiniBatchKMeans vs KMeans on various data sets
+* MiniBatchKMeans vs KMeans on various data sets (when does MiniBatchKMeans perform better/worse?)
 
 Iris
-* Graphical comparison of predicted and actual clustering (user markers for actual; colors for predicted - have to use matplotlib, not seaborn to do this)
-* Accuracy of clustering 2 overlapping Iris species
+* Use entire dataset as training set and examine training set error
+* Split dataset into training & test sets and examine training and test set error
+* Examine clustering accuracy graphically & numerically
 
 
 ### K-Means Assumptions
