@@ -13,9 +13,9 @@ virtualenv venv
 source venv/bin/activate
 
 # Install pydata modules
+pip install numpy
 pip install scipy
 pip install sympy
-pip install numpy
 pip install pandas
 pip install sklearn
 
