@@ -5,7 +5,7 @@ My experiments with various ML tools & algorithms:
 * NumPy
 * pandas
 * scikit-learn
-* matplotlib/seaborn
+* matplotlib/Seaborn
 * iPython/Jupyter
 * PyMC
 * xgboost
@@ -18,8 +18,8 @@ My experiments with various ML tools & algorithms:
 * mlr
 * metrics
 * xgboost
-* ggplot2
-* hadley-verse: dplyr, tidyr, devtools, feather, testthat, devtools
+* hadley-verse: dplyr, tidyr, devtools, feather, testthat, devtools, ggplot2
+* Stan, RStan
 
 **Spark**
 * SparkR
@@ -27,6 +27,10 @@ My experiments with various ML tools & algorithms:
 * MLLib
 * Databricks notebooks
 * Spark on AWS EMR
+
+**Deep Learning**
+* Keras
+* mxnet
 
 Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook file or at http://nbviewer.jupyter.org/github/niranjv/ml/
 
