@@ -31,9 +31,9 @@ My experiments with various ML tools & algorithms:
 Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook file or at http://nbviewer.jupyter.org/github/niranjv/ml/
 
 ### References
-**Python for Data Analysis*, Wes McKinney, O'Reilly, 2012
-**Numerical Python*, Robert Johansson, APress, 2015
-**Python Data Science Handbook*, Jake VanderPlas, O'Reilly, 2016
+* *Python for Data Analysis*, Wes McKinney, O'Reilly, 2012
+* *Numerical Python*, Robert Johansson, APress, 2015
+* *Python Data Science Handbook*, Jake VanderPlas, O'Reilly, 2016
 
 * [Scikit-learn tutorial](http://nbviewer.jupyter.org/github/jakevdp/sklearn_tutorial/blob/master/notebooks/Index.ipynb)
 * [Data science ipython notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
