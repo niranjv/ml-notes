@@ -5,8 +5,8 @@ sudo python get-pip.py
 pip install --upgrade pip # Upgrade pip
 sudo pip install virtualenv
 
-mkdir ml
-cd ml/
+mkdir ml-tools-notes
+cd ml-tools-notes/
 
 # Create virtualenv for pydata
 virtualenv venv
@@ -48,7 +48,13 @@ pip install seaborn
 
 # ----------
 
-git clone https://github.com/niranjv/ml.git
+git init
+git remote add origin https://github.com/niranjv/ml-tools-notes.git
+git remote -v # verify remote
+git fetch --all --prune
+
+git config --local user.name "<NAME>"
+git config --local user.email "<EMAIL>"
 
 # jupyter notebook
 # proceed in notebook
