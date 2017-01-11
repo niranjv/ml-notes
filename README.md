@@ -28,6 +28,8 @@ My experiments with various ML tools & algorithms:
 * Databricks notebooks
 * Spark on AWS EMR
 
+AWS ML
+
 **Deep Learning**
 * Keras
 * mxnet
