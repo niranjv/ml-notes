@@ -18,14 +18,14 @@ My experiments with various ML tools & algorithms:
 | | |
 |--------|-------------|
 | RStudio  | IDE for R programming  |
-| R notebooks  | Interactive R markdown doc with executable chunks (alternative to Jupyter notebooks)  |
+| R notebooks  | Interactive R markdown doc with executable chunks <br/> (alternative to Jupyter notebooks)  |
 | data.table  | Faster version of data.frame to handle large data sets (100s of GB) |
 | caret  | Classification & regression models  |
 | mlr  | Machine learning in R  |
 | metrics, MLmetrics  | Common evaluation metrics in machine learning  |
 | xgboost  | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
 | hadley-verse: dplyr, tidyr, stringr, devtools, <br/> feather, testthat, devtools, ggplot2  | Tools for data manipulation, unit testing, package development & plotting |
-| Stan, RStan  | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML <br/> with interfaces to R & Python  |
+| Stan, RStan  | Bayesian inference with Hamiltonian Monte Carlo, variational inference & <br/> penalized ML with interfaces to R & Python  |
 
 **Spark**
 
