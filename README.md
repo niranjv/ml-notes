@@ -6,7 +6,7 @@ My experiments with various ML tools & algorithms:
 |   |  |
 |--------|-------------|
 | [NumPy](numpy/)  | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
-| [Pandas](pandas/) | Labeled access to column-oriented data frames & series |
+| [pandas](pandas/) | Labeled access to column-oriented data frames & series |
 | [scikit-learn](scikit-learn/) | Machine learning in Python (single machine only) |
 | matplotlib/Seaborn | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
 | [iPython/Jupyter](jupyter-notes.ipynb) | Notebooks for interactive computing, prototyping and reporting |
