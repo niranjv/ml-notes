@@ -24,8 +24,8 @@ My experiments with various ML tools & algorithms:
 | mlr | Machine learning in R  |
 | metrics, MLmetrics | Common evaluation metrics in machine learning  |
 | xgboost | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
-| hadley-verse: dplyr, tidyr, stringr, devtools, <br/> feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
-| Stan, RStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & <br/> penalized ML with interfaces to R & Python |
+| hadley-verse: dplyr, tidyr, stringr, devtools, feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
+| Stan, RStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML with interfaces to R & Python |
 
 **Spark**
 
@@ -53,6 +53,5 @@ Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook f
 * *Python for Data Analysis*, Wes McKinney, O'Reilly, 2012
 * *Numerical Python*, Robert Johansson, APress, 2015
 * *Python Data Science Handbook*, Jake VanderPlas, O'Reilly, 2016
-
 * [Scikit-learn tutorial](http://nbviewer.jupyter.org/github/jakevdp/sklearn_tutorial/blob/master/notebooks/Index.ipynb)
 * [Data science ipython notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
