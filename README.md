@@ -5,13 +5,13 @@ My experiments with various ML tools & algorithms:
 
 |   |  |
 |--------|-------------|
-| NumPy  | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
-| Pandas | Labeled access to column-oriented data frames & series |
-| scikit-learn | Machine learning in Python (single machine only) |
+| [NumPy](numpy/)  | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
+| [Pandas](pandas/) | Labeled access to column-oriented data frames & series |
+| [scikit-learn](scikit-learn/) | Machine learning in Python (single machine only) |
 | matplotlib/Seaborn | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
-| iPython/Jupyter | Notebooks for interactive computing, prototyping and reporting |
+| [iPython/Jupyter](jupyter-notes.ipynb) | Notebooks for interactive computing, prototyping and reporting |
 | PyMC | Bayesian statistical model fitting with MCMC |
-| xgboost | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
+| [xgboost](xgboost/) | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
 
 ## R
 
