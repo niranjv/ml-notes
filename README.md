@@ -6,7 +6,7 @@ My experiments with various ML tools & algorithms:
 |   |  |
 |--------|-------------|
 | NumPy  | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
-| Pandas | Labeled access to column-oriented data frames & series|
+| Pandas | Labeled access to column-oriented data frames & series |
 | scikit-learn | Machine learning in Python (single machine only) |
 | matplotlib/Seaborn | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
 | iPython/Jupyter | Notebooks for interactive computing, prototyping and reporting |
@@ -17,25 +17,25 @@ My experiments with various ML tools & algorithms:
 
 | | |
 |--------|-------------|
-| RStudio  | IDE for R programming  |
-| R notebooks  | Interactive R markdown doc with executable chunks <br/> (alternative to Jupyter notebooks)  |
-| data.table  | Faster version of data.frame to handle large data sets (100s of GB) |
-| caret  | Classification & regression models  |
-| mlr  | Machine learning in R  |
-| metrics, MLmetrics  | Common evaluation metrics in machine learning  |
-| xgboost  | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
-| hadley-verse: dplyr, tidyr, stringr, devtools, <br/> feather, testthat, devtools, ggplot2  | Tools for data manipulation, unit testing, package development & plotting |
-| Stan, RStan  | Bayesian inference with Hamiltonian Monte Carlo, variational inference & <br/> penalized ML with interfaces to R & Python  |
+| RStudio | IDE for R programming |
+| R notebooks | Interactive R markdown doc with executable chunks <br/> (alternative to Jupyter notebooks for R) |
+| data.table | Faster version of data.frame to handle large data sets (100s of GB) |
+| caret | Classification & regression models |
+| mlr | Machine learning in R  |
+| metrics, MLmetrics | Common evaluation metrics in machine learning  |
+| xgboost | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
+| hadley-verse: dplyr, tidyr, stringr, devtools, <br/> feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
+| Stan, RStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & <br/> penalized ML with interfaces to R & Python |
 
 **Spark**
 
 | | |
 |--------|-------------|
 | SparkR  | R package to interface with Spark |
-| PySpark  | Python interface to Spark  |
+| PySpark  | Python interface to Spark |
 | MLLib  | Spark's Scalable machine learning library <br/> with interfaces to Python & R |
-| Databricks notebooks  | Interactive Jupyter-like notebooks <br/> for Spark programming in Python, R, etc.  |
-| Spark on AWS EMR  | Run Spark clusters in AWS with access to S3 & Hive  |
+| Databricks notebooks  | Interactive Jupyter-like notebooks <br/> for Spark programming in Python, R, etc. |
+| Spark on AWS EMR  | Run Spark clusters in AWS with access to S3 & Hive |
 
 AWS ML - Machine learning as a service for creating and deploying models <br/> with support for linear & logistic regression
 
@@ -43,7 +43,7 @@ AWS ML - Machine learning as a service for creating and deploying models <br/> w
 
 | | |
 |--------|-------------|
-| Keras + TensorFlow/Theano  | Python package to enable fast experimentation with deep learning <br/> frameworks like TensorFlow & Theano on CPUs & GPUs  |
+| Keras + TensorFlow/Theano  | Python package to enable fast experimentation with deep learning <br/> frameworks like TensorFlow & Theano on CPUs & GPUs |
 | mxnet | Deep learning library with interfaces to Python & R |
 
 
