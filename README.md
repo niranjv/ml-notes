@@ -2,37 +2,50 @@
 My experiments with various ML tools & algorithms:
 
 **Python**
-* NumPy
-* pandas
-* scikit-learn
-* matplotlib/Seaborn
-* iPython/Jupyter
-* PyMC
-* xgboost
- 
+
+|   |  |
+|--------|-------------|
+| NumPy  | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
+| Pandas | Labeled access to column-oriented data frames & series|
+| scikit-learn | Machine learning in Python (single machine only) |
+| matplotlib/Seaborn | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
+| iPython/Jupyter | Notebooks for interactive computing, prototyping and reporting |
+| PyMC | Bayesian statistical model fitting with MCMC |
+| xgboost | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
+
 **R**
-* RStudio
-* R notebooks
-* data.table
-* caret
-* mlr
-* metrics
-* xgboost
-* hadley-verse: dplyr, tidyr, devtools, feather, testthat, devtools, ggplot2
-* Stan, RStan
+
+| | |
+|--------|-------------|
+| RStudio  | IDE for R programming  |
+| R notebooks  | Interactive R markdown doc with executable chunks (alternative to Jupyter notebooks)  |
+| data.table  | Faster version of data.frame to handle large data sets (100s of GB) |
+| caret  | Classification & regression models  |
+| mlr  | Machine learning in R  |
+| metrics, MLmetrics  | Common evaluation metrics in machine learning  |
+| xgboost  | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
+| hadley-verse: dplyr, tidyr, stringr, devtools, <br/> feather, testthat, devtools, ggplot2  | Tools for data manipulation, unit testing, package development & plotting |
+| Stan, RStan  | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML <br/> with interfaces to R & Python  |
 
 **Spark**
-* SparkR
-* PySpark
-* MLLib
-* Databricks notebooks
-* Spark on AWS EMR
 
-AWS ML
+| | |
+|--------|-------------|
+| SparkR  | R package to interface with Spark |
+| PySpark  | Python interface to Spark  |
+| MLLib  | Spark's Scalable machine learning library <br/> with interfaces to Python & R |
+| Databricks notebooks  | Interactive Jupyter-like notebooks <br/> for Spark programming in Python, R, etc.  |
+| Spark on AWS EMR  | Run Spark clusters in AWS with access to S3 & Hive  |
+
+AWS ML - Machine learning as a service for creating and deploying models <br/> with support for linear & logistic regression
 
 **Deep Learning**
-* Keras
-* mxnet
+
+| | |
+|--------|-------------|
+| Keras + TensorFlow/Theano  | Python package to enable fast experimentation with deep learning <br/> frameworks like TensorFlow & Theano on CPUs & GPUs  |
+| mxnet | Deep learning library with interfaces to Python & R |
+
 
 Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook file or at http://nbviewer.jupyter.org/github/niranjv/ml/
 
