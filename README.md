@@ -1,7 +1,7 @@
 # ML
 My experiments with various ML tools & algorithms:
 
-**Python**
+## Python
 
 |   |  |
 |--------|-------------|
@@ -13,7 +13,7 @@ My experiments with various ML tools & algorithms:
 | PyMC | Bayesian statistical model fitting with MCMC |
 | xgboost | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
 
-**R**
+## R
 
 | | |
 |--------|-------------|
@@ -27,7 +27,7 @@ My experiments with various ML tools & algorithms:
 | hadley-verse: dplyr, tidyr, stringr, devtools, feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
 | Stan, RStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML with interfaces to R & Python |
 
-**Spark**
+## Spark
 
 | | |
 |--------|-------------|
@@ -39,7 +39,7 @@ My experiments with various ML tools & algorithms:
 
 AWS ML - Machine learning as a service for creating and deploying models <br/> with support for linear & logistic regression
 
-**Deep Learning**
+## Deep Learning
 
 | | |
 |--------|-------------|
@@ -49,7 +49,7 @@ AWS ML - Machine learning as a service for creating and deploying models <br/> w
 
 Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook file or at http://nbviewer.jupyter.org/github/niranjv/ml/
 
-### References
+## References
 * *Python for Data Analysis*, Wes McKinney, O'Reilly, 2012
 * *Numerical Python*, Robert Johansson, APress, 2015
 * *Python Data Science Handbook*, Jake VanderPlas, O'Reilly, 2016
