@@ -8,7 +8,7 @@ My experiments with various ML tools & algorithms:
 | [NumPy](numpy/)  | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
 | [pandas](pandas/) | Labeled access to column-oriented data frames & series |
 | [scikit-learn](scikit-learn/) | Machine learning in Python (single machine only) |
-| matplotlib/Seaborn | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
+| [matplotlib/Seaborn](#matplotlib-seaborn-notes.ipynb) | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
 | [iPython/Jupyter](jupyter-notes.ipynb) | Notebooks for interactive computing, prototyping and reporting |
 | PyMC | Bayesian statistical model fitting with MCMC |
 | [xgboost](xgboost/) | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
