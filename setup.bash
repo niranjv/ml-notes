@@ -17,7 +17,10 @@ pip install numpy
 pip install scipy
 pip install sympy
 pip install pandas
+
 pip install sklearn
+pip install patsy
+pip install statsmodels
 
 pip install nose
 
