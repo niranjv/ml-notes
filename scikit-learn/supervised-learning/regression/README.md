@@ -10,6 +10,10 @@ Explore regression in scikit-learn
 * Logistic regression
 * Stochastic Gradient Descent
 
+Notes:
+* Ridge regression and LASSO are forms of penalized estimation. They introduce bias into estimation of model parameters to reduce variance of estimate. They have lower MSE than OLS when multi-collinearity is present. These methods are used mainly for prediction and not for inference since it is difficult to account for bias
+
 ## References
 * [scikit-learn Generalized Linear Models](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model)
+* [Wikipedia - Linear Regression](https://en.wikipedia.org/wiki/Linear_regression)
 * Numerical Python, Robert Johansson, APress, 2015
