@@ -5,7 +5,7 @@ My experiments with various ML tools & algorithms:
 
 |   |  |
 |--------|-------------|
-| [NumPy](numpy/)  | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
+| [NumPy](numpy/) | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
 | [pandas](pandas/) | Labeled access to column-oriented data frames & series |
 | [scikit-learn](scikit-learn/) | Machine learning in Python (single machine only) |
 | [matplotlib/Seaborn](#matplotlib-seaborn-notes.ipynb) | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
@@ -22,9 +22,10 @@ My experiments with various ML tools & algorithms:
 | data.table | Faster version of data.frame to handle large data sets (100s of GB) |
 | caret | Classification & regression models |
 | mlr | Machine learning in R  |
+| forecast | Analyze univariate time series | 
 | metrics, MLmetrics | Common evaluation metrics in machine learning  |
 | xgboost | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
-| hadley-verse: dplyr, tidyr, stringr, devtools, feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
+| hadley-verse: dplyr, tidyr, stringr, httpr, knitr, devtools, feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
 | Stan, RStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML with interfaces to R & Python |
 
 ## Spark
