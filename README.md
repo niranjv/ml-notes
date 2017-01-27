@@ -7,6 +7,9 @@ My experiments with various ML tools & algorithms:
 |--------|-------------|
 | [NumPy](numpy/) | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
 | [pandas](pandas/) | Labeled access to column-oriented data frames & series |
+| Dask | Parallel computing with task scheduling |
+| SciPy | Numerical routines |
+| statsmodels | Statistical models & tests |
 | [scikit-learn](scikit-learn/) | Machine learning in Python (single machine only) |
 | [matplotlib/Seaborn](#matplotlib-seaborn-notes.ipynb) | High-level (Seaborn) & low-level (matplotlib) visualization libraries |
 | [iPython/Jupyter](jupyter-notes.ipynb) | Notebooks for interactive computing, prototyping and reporting |
