@@ -15,6 +15,8 @@ My experiments with various ML tools & algorithms:
 | [iPython/Jupyter](jupyter-notes.ipynb) | Notebooks for interactive computing, prototyping and reporting |
 | PyMC | Bayesian statistical model fitting with MCMC |
 | [xgboost](xgboost/) | Scalable gradient boosting (typically used with decision trees) <br/> with interfaces to Python & R |
+| Numba | Generate optimized machine code using JIT compilation |
+| Cython | Generate C code that can be compiled into machine code with ahead-of-time compilation |
 
 ## R
 
