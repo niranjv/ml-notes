@@ -5,7 +5,7 @@ My experiments with various ML tools & algorithms:
 
 |   |  |
 |--------|-------------|
-| [NumPy](numpy/) | Efficient storage for large multi-dimensional arrays & <br/> vectorized functions operating on these arrays |
+| [NumPy](numpy/) | Efficient storage for large multi-dimensional arrays & vectorized functions operating on these arrays |
 | [pandas](pandas/) | Labeled access to column-oriented data frames & series |
 | Dask | Parallel computing with task scheduling |
 | SciPy | Numerical routines |
