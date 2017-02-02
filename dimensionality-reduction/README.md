@@ -41,12 +41,9 @@
  * Only removes 2nd order dependencies (which is sufficient for data sets with Gaussian distribution); does not remove higher-order dependencies (in non-Gaussian data); need to use kernel PCA or ICA for this
  * Does not consider response while reducing dimension of features
  * Sensitive to relative scaling of original features
-
-
- ### References
- * [A Tutorial on Principal Components Analysis](https://arxiv.org/abs/1404.1100), Jonathon Shlens, 2014
- * [A Tutorial on Principal Components Analysis](http://courses.cs.washington.edu/courses/cse528/07sp/pca.pdf), Lindsay I Smith, 2002
- * [Principal Components Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis), Wikipedia, Jan 2017
+* **Implementations**
+ * scikit-learn: Exact PCA, Incremental PCA, Kernel PCA, Sparse PCA, Mini Batch Sparse PCA
+ * Spark: PCA
 
 ## Principal Components Regression
 * ?
@@ -57,6 +54,11 @@
 
 ## Partial Least Squares Regression
 * ?
+
+## Singular Value Decomposition
+* **Implementations**
+ * scikit-learn: TruncatedSVD
+ * Spark: SVD
 
 ## Projection Pursuit
 * ?
@@ -89,6 +91,8 @@
 * Factors represent the common variance of features, excluding unique variance
 * Focus is on off-diagonal terms of correlation matrix
 * FA is used when purpose is detect data structure or for causal modeling
+* **Implementations**
+ * scikit-learn: FactorAnalysis
 
 ## Manifold Learning
 * Non-linear mapping of features to lower-dimensional space
@@ -100,3 +104,26 @@
 
 ## Feature agglomeration
 * ?
+
+## Non-Negative Matrix Factorization
+* **Implementations**
+ * scikit-learn: NMF
+
+## Independent Components Analysis (ICA)
+* Non-linear decomposition of mixed signal into additive components
+* Typically used for separating mixed signals, not dimension reduction
+* No noise term in model, so whitening must be applied
+* **Implementations**
+ * scikit-learn: Fast ICA
+
+## Latent Dirichlet Allocation
+* **Implementations**
+ * scikit-learn: LatentDirichletAllocation
+
+## References
+* [A Tutorial on Principal Components Analysis](https://arxiv.org/abs/1404.1100), Jonathon Shlens, 2014
+* [A Tutorial on Principal Components Analysis](http://courses.cs.washington.edu/courses/cse528/07sp/pca.pdf), Lindsay I Smith, 2002
+* [Principal Components Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis), Wikipedia, Jan 2017
+* [A Tutorial on Independent Components Analysis](https://arxiv.org/abs/1404.2986), Jonathon Shlens, 2014
+* [A Survey of Dimensionality Reduction Techniques](http://computation.llnl.gov/casc/sapphire/pubs/148494.pdf), Imola K Fodor, LLNL technote
+* [Bayesian PCA](https://www.microsoft.com/en-us/research/publication/bayesian-pca/), Christopher Bishop, NIPS 1998
