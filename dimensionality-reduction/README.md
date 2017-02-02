@@ -1,7 +1,22 @@
 # Contents
-* [Overview](#Overview)
-* [Principal Components Analysis](#Principal-Components-Analysis)
+* [Overview](#overview)
+* [Principal Components Analysis](#principal-components-analysis)
 * [Partial Least Squares](#partial-least-squares)
+* [Factor Analysis](#factor-analysis)
+* [Singular Value Decomposition](#singular-value-decomposition)
+* [Projection Pursuit](#projection-pursuit)
+* [Multi-Dimensional Scaling](#multi-dimensional-scaling)
+* [Linear Discriminant Analysis](#linear-discriminant-analysis)
+* [Partial Least Squares Discriminant Analysis](#oartial-least-squares-discriminant-analysis)
+* [Mixture Discriminant Analysis](#mixture-discriminant-analysis)
+* [Quadratic Discriminant Analysis](#quadratic-discriminant-analysis)
+* [Regularized Discriminant Analysis](#regularized-discriminant-analysis)
+* [Manifold Learning](#manifold-learning)
+* [Random Projections](#random-projections)
+* [Feature Agglomeration](#feature-agglomeration)
+* [Non-Negative Matrix Factorization](#non-negative-matrix-factorization)
+* [Independent Components Analysis](#independent-component-analysis)
+* [Latent Dirichlet Allocation](#latent-dirichlet-allocation)
 
 ## Overview
 * Dimensionality reduction is the process of reducing the number of features under consideration to a set of principal features.
@@ -56,11 +71,14 @@
  * Supervised dimensionality reduction
  * Looks for projections having highest covariance with group labels
 
-## Principal Components Regression
-* ?
-
-## Partial Least Squares Regression
-* ?
+## Factor Analysis
+ * Focus of Factor Analysis is on correlations
+ * FA generates new variables that are linear combinations of features and seeks to reproduce inter-correlation between variables
+ * Factors represent the common variance of features, excluding unique variance
+ * Focus is on off-diagonal terms of correlation matrix
+ * FA is used when purpose is detect data structure or for causal modeling
+ * **Implementations**
+  * scikit-learn: factor-analysis
 
 ## Singular Value Decomposition
 * **Implementations**
@@ -70,7 +88,7 @@
 ## Projection Pursuit
 * ?
 
-## Multidimensional Scaling
+## Multi-Dimensional Scaling
 * ?
 
 ## Linear Discriminant Analysis
@@ -92,15 +110,6 @@
 ## Regularized Discriminant Analysis
 * ?
 
-## Factor Analysis
-* Focus of Factor Analysis is on correlations
-* FA generates new variables that are linear combinations of features and seeks to reproduce inter-correlation between variables
-* Factors represent the common variance of features, excluding unique variance
-* Focus is on off-diagonal terms of correlation matrix
-* FA is used when purpose is detect data structure or for causal modeling
-* **Implementations**
- * scikit-learn: FactorAnalysis
-
 ## Manifold Learning
 * Non-linear mapping of features to lower-dimensional space
 * Many approaches available such as Isomap, Local Linear Embedding, Hessian Eigenmapping, Spectral Embedding, Local Tangent Space Alignment, t-distributed Stochastic Neighbor Embedding, etc.
@@ -109,7 +118,7 @@
 ## Random Projections
 * ?
 
-## Feature agglomeration
+## Feature Agglomeration
 * ?
 
 ## Non-Negative Matrix Factorization
