@@ -1,7 +1,7 @@
 # Contents
 * [Overview](#Overview)
 * [Principal Components Analysis](#Principal-Components-Analysis)
-* [Partial Least Squares](#Partial-Least-Squares)
+* [Partial Least Squares](#partial-least-squares)
 
 ## Overview
 * Dimensionality reduction is the process of reducing the number of features under consideration to a set of principal features.
