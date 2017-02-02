@@ -1,3 +1,8 @@
+# Contents
+* [Overview](#Overview)
+* [Principal Components Analysis](#Principal-Components-Analysis)
+* [Partial Least Squares](#Partial-Least-Squares)
+
 ## Overview
 * Dimensionality reduction is the process of reducing the number of features under consideration to a set of principal features.
 * The transformation can be linear (PCA) or non-linear (manifold learning)
@@ -8,7 +13,7 @@
 * Disadvantages:
  * Response variable is not always considered in feature extraction/dimensionality reduction
 
-## Principal Components Analysis (PCA)
+## Principal Components Analysis
 * Orthogonal linear transformation to convert a set of possibly correlated features to a smaller set of linearly uncorrelated variables (*Principal Components*), all orthogonal to each other
 * Re-express data set in the most meaningful basis that will filter out noise and reveal hidden structure
 * **linear** combination of original basis => change of basis to a new basis
@@ -29,6 +34,7 @@
  * Large variances => PCs with large variances represent important structure in feature space => high SNR
  * Orthogonal components => Lower redundancy; easy way to calculate *P*
 * **Solutions:**
+  * PCA is always done on mean-centered features
   * via Eigenvector decomposition of covariance matrix of features
   * via Singular Value Decomposition of data matrix of features
 * **Advantages:**
@@ -43,14 +49,15 @@
  * Sensitive to relative scaling of original features
 * **Implementations**
  * scikit-learn: Exact PCA, Incremental PCA, Kernel PCA, Sparse PCA, Mini Batch Sparse PCA
+ * R: prcomp,
  * Spark: PCA
+
+## Partial Least Squares
+ * Supervised dimensionality reduction
+ * Looks for projections having highest covariance with group labels
 
 ## Principal Components Regression
 * ?
-
-## Partial Least Squares
-* Supervised dimensionality reduction
-* Looks for projections having highest covariance with group labels
 
 ## Partial Least Squares Regression
 * ?
@@ -66,7 +73,7 @@
 ## Multidimensional Scaling
 * ?
 
-## Linear Discriminant Analysis (LDA)
+## Linear Discriminant Analysis
 * Supervised dimensionality reduction (i.e., takes into account the response/label)
 * Generalizations of Fisher's linear discriminant
 * Finds a linear combination of features to separate 2 or more classes
@@ -109,7 +116,7 @@
 * **Implementations**
  * scikit-learn: NMF
 
-## Independent Components Analysis (ICA)
+## Independent Components Analysis
 * Non-linear decomposition of mixed signal into additive components
 * Typically used for separating mixed signals, not dimension reduction
 * No noise term in model, so whitening must be applied
