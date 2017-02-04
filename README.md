@@ -3,7 +3,7 @@ My experiments with various ML tools & algorithms
 
 ## Problem Types
 | | |
-| - | - |
+| --- | --- |
 | [Association Rules](association-rules) | ? |
 | Classification | ? |
 | [Clustering](clustering) | ? |
