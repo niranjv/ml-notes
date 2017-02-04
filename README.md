@@ -2,14 +2,14 @@
 My experiments with various ML tools & algorithms
 
 ## Problem Types
-| | |
-| --- | --- |
-| [Association Rules](association-rules) | ? |
-| Classification | ? |
-| [Clustering](clustering) | ? |
-| [Density Estimation](density-estimation) | ? |
-| [Dimensionality Reduction](dimensionality-reduction) | ? |
-| [Regression](regression) | ? |
+| |
+| --- |
+| [Association Rules](association-rules) |
+| Classification |
+| [Clustering](clustering) |
+| [Density Estimation](density-estimation) |
+| [Dimensionality Reduction](dimensionality-reduction) |
+| [Regression](regression) |
 
 ## Tools
 
