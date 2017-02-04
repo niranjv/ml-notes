@@ -29,9 +29,9 @@
  * Easier to visualize data
 * Disadvantages:
  * Response variable is not always considered in feature extraction/dimensionality reduction
- 
+
 ## Notebooks
-* PCA when `n` < `p` 
+* PCA when `n` < `p`
 
 ## Principal Components Analysis
 * PCA finds a low-dim representation of a dataset that contains as much of the variance of the dataset as possible
@@ -164,7 +164,7 @@
 
 ## Latent Dirichlet Allocation
 * **Implementations**
- * scikit-learn: LatentDirichletAllocation
+ * Spark: `LDA`
 
 ## References
 * An Introduction to Statistical Learning with Applications in R
