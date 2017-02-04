@@ -15,16 +15,19 @@
 * [References](#references)
 
 ## Overview
-* Purpose: Find sub-groups/clusters in data by partitioning into groups s.t. samples within groups are more similar to each compared to samples in other group
+* Find sub-groups/clusters in data by partitioning into groups s.t. samples within groups are more similar to each compared to samples in other group
 * Unsupervised learning since no labelled data is available; training data consists only of features
-* Output is a cluster/class for each sample.
+* Requires definition of similarity/dissimilarity
+* Input is a set of features for each sample; output is a cluster/class for each sample.
+* Used mainly for exploratory data analysis and visualization
+* Can also be used as part of a hierarchical supervised learning pipeline where regression/classification is done separately for each cluster
 
 ## Notebooks
 * [K-Means - ideal case](kmeans-ideal-blobs.ipynb)
 * [K-Means vs GMMs - Iris](kmeans-vs-gmm-iris.ipynb)
 
 ## K-Means
-* Group samples into `K` distinct non-overlapping clusters to minimize within-cluster variation (sum of squares from cluster center)
+* Group samples into `K` distinct non-overlapping clusters that minimize within-cluster variation (sum of squares from cluster centroid)
 
 **Lloyd's Algorithm for KMeans**
 * Assign some points to be cluster centers (randomly or using k-means++)
@@ -35,7 +38,7 @@
 
 **K-Means Assumptions**
 * Data has only K clusters
-* Clusgters are spherical with similar variance
+* Clusters are spherical with similar variance
 * Clusters have similar size
 * Sum of Squared Errors (variance) is an appropriate clustering metric for the data
 * All clusters are equally likely
@@ -57,15 +60,16 @@ Examine performance when K-Means assumptions are violated:
 * Spark: `KMeans`, `KMeansModel`
 
 ## Gaussian Mixture Models
-* Fit GMM to training data (assumes data is generated from a mixture of finite number of Gaussian distributions with unknown params)
+* GMM is a composite distribution where each point in the distribution is drawn from one of `k` distinct Gaussian distributions
+* EM algorithm is used to determine parameters of the `k` distributions and the probability of each point belonging to the `k` distributions
 * **Implementations**
  * scikit-learn: Gaussian Mixture Models
  * Spark: `GaussianMixture`, `GaussianMixtureModel`
 
  **GMMs vs KMeans**
- * In K-Means, a point is either in or not in a cluster
- * GMMs can assign probability of a point belonging to a cluster
- * GMMs can be considered as a generalization of K-Means
+ * In K-Means, a point must belong to exactly 1 cluster (it is either in or not in a cluster)
+ * GMMs can assign probability of a point belonging to each of the `k` clusters
+ * GMMs can be considered as a generalization of K-Means (i.e., soft K-Means)
  * Expectation-Maximization is a generalization of both K-Means and GMMs
  * **Implementations**
   * scikit-learn: KMeans, Mini-batch K-Means
@@ -96,6 +100,10 @@ Examine performance when K-Means assumptions are violated:
 * Builds a `Characteristic Feature Tree (CFT)` for training data
 
 ## Power Iteration Clustering
+* Cluster vertices of a graph when pairwise  similarities are given as edge properties
+* Pairwise similarities should be non-negative and symmetric; missing similarities = 0
+* Computes pseudo-eigenvector of normalized affinity matrix and uses it to cluster vertices
+* Input = (src-vertex, dest-vertex, similarity); output = model with cluster assignments
 * **Implementations**
  * Spark: `PowerIterationClustering`
 
