@@ -22,7 +22,8 @@
 
 ## Overview
 * Dimensionality reduction is the process of reducing the number of features under consideration to a set of principal features.
-* The transformation can be linear (PCA) or non-linear (manifold learning)
+* Extract signal from raw, noisy features or compress number of features while maintaining structure of data
+* The transformation can be linear (e.g., PCA) or non-linear (e.g., manifold learning)
 * Advantages:
  * Reduce time and storage space required
  * Removal of multi-collinearity
@@ -83,7 +84,7 @@
 * **Implementations**
  * scikit-learn: Exact PCA, Incremental PCA, Kernel PCA, Sparse PCA, Mini Batch Sparse PCA
  * R: `prcomp()`, `princomp()`, `psych.principal()`
- * Spark: PCA
+ * Spark: `RowMatrix.computePrincipalComponents()` (for matrix with `n >> p` only) & `PCA` for vectors
 
 ## Partial Least Squares
  * Supervised dimensionality reduction
@@ -118,9 +119,10 @@
 
 
 ## Singular Value Decomposition
+* A = UDV', where D = diagonal matrix of singular values in desc order; U V = orthonormal matrix whose columns are singular vectors
 * **Implementations**
  * scikit-learn: TruncatedSVD
- * Spark: SVD
+ * Spark: `linalg.SingularValueDecomposition`, `RowMatrix.computeSVD()`
 
 ## Projection Pursuit
 * ?
