@@ -1,10 +1,8 @@
 Association rule learning - discover 'interesting' relations between variables
 
 ## Problems
-* Association Rules (with confidence score)
- * Order of items is not considered
-* Sequential pattern mining
- * Order of items matters
+* Association Rules (with confidence score) - Order of items is not considered
+* Sequential pattern mining - Order of items matters
 
 ## Metrics
 * Support
@@ -13,10 +11,24 @@ Association rule learning - discover 'interesting' relations between variables
 * Conviction
 
 ## Algorithms
-* FP-growth - find frequent itemsets without traversing all possible itemsets
+
+### FP-growth
+* Find frequent itemsets without traversing all possible itemsets
+* Implementations 
+ * Spark: `FPGrowth.train()`, ` FPGrowthModel`
+
+### AssociationRules
+**Implementations**
+ * Spark: `AssociationRules`, `FPGrowth.FreqItemset`
+
+### PrefixSpan 
+* For sequential pattern mining
+**Implementations**
+ * Spark: `PrefixSpan`
+
+
 * Apriori
 * Eclat - Equivalence Class Transformation
-* PrefixSpan - for sequential pattern mining
 
 
 ## Tools
