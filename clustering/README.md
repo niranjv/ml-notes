@@ -54,10 +54,11 @@ Examine performance when K-Means assumptions are violated:
 * Well-separated clusters violation - Uniform data
 * MiniBatchKMeans vs KMeans on various data sets (when does MiniBatchKMeans perform better/worse?)
 
-**Implementations**
-* scikit-learn:
-* R: `kmeans`
-* Spark: `KMeans`, `KMeansModel`
+* **Implementations**
+ * scikit-learn: KMeans, Mini-batch K-Means
+ * R: `kmeans`
+ * Spark: `KMeans`, `BisectingKMeans`, `StreamingKMeans` (generalization of mini-batch K-Means)
+
 
 ## Gaussian Mixture Models
 * GMM is a composite distribution where each point in the distribution is drawn from one of `k` distinct Gaussian distributions
@@ -71,10 +72,9 @@ Examine performance when K-Means assumptions are violated:
  * GMMs can assign probability of a point belonging to each of the `k` clusters
  * GMMs can be considered as a generalization of K-Means (i.e., soft K-Means)
  * Expectation-Maximization is a generalization of both K-Means and GMMs
- * **Implementations**
-  * scikit-learn: KMeans, Mini-batch K-Means
-  * Spark: `KMeans`, `BisectingKMeans`, `StreamingKMeans` (generalization of mini-batch K-Means)
 
+ * **Implementations**
+ 
 
 ## Hierarchical Clustering
  * Can be agglomerative (bottom-up) or divisive (top-down) like bisecting K-Means
@@ -82,7 +82,7 @@ Examine performance when K-Means assumptions are violated:
  * Generates all possible clusters from 1 to `n` in a `dendrogram`
 **Implementations**
 * R: `hclust`, `cutree`
-* Spark: `BisectingKMeans`
+* Spark: `BisectingKMeans`, `BisectingKMeansModel`
 
 ## Affinity Propagation
 * Creates clusters by sending messages between pairs of samples until convergence
