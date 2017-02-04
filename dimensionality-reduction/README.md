@@ -1,5 +1,6 @@
 # Contents
 * [Overview](#overview)
+* [Notebooks](#notebooks)
 * [Principal Components Analysis](#principal-components-analysis)
 * [Partial Least Squares](#partial-least-squares)
 * [Factor Analysis](#factor-analysis)
@@ -28,6 +29,9 @@
  * Easier to visualize data
 * Disadvantages:
  * Response variable is not always considered in feature extraction/dimensionality reduction
+ 
+## Notebooks
+* PCA when `n` < `p` 
 
 ## Principal Components Analysis
 * Orthogonal linear transformation to convert a set of possibly correlated features to a smaller set of linearly uncorrelated variables (*Principal Components*), all orthogonal to each other
