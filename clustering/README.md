@@ -1,5 +1,8 @@
 # Contents
 * [Overview](#overview)
+* [Notebooks](#notebooks)
+
+Approaches
 * [K-Means](#k-means)
 * [Affinity Propagation](#affinity-propagation)
 * [Mean Shift](#mean-shift)
@@ -8,15 +11,21 @@
 * [DBSCAN](#dbscan)
 * [Birch](#birch)
 * [Power Iteration Clustering](#power-iteration-clustering)
+
 * scikit-learn details
 * [References](#references)
 
 ## Overview
-* Clustering is unsupervised learning since no labelled data is available; training data consists only of features; output is a cluster/class for each sample.
-* See [Clustering guide](http://scikit-learn.org/stable/modules/clustering.html) for types of clustering algorithms available in scikit-learn and when to use them. Algorithms include:
+* Purpose: Find sub-groups/clusters in data by partitioning into groups s.t. samples within groups are more similar to each compared to samples in other group
+* Unsupervised learning since no labelled data is available; training data consists only of features
+* Output is a cluster/class for each sample.
+
+## Notebooks
+* [K-Means - ideal case](kmeans-ideal-blobs.ipynb)
+* [K-Means vs GMMs - Iris](kmeans-vs-gmm-iris.ipynb)
 
 ## K-Means
-* Group samples into clusters to minimize within-cluster sum of squares from cluster center
+* Group samples into `K` distinct non-overlapping clusters to minimize within-cluster variation (sum of squares from cluster center)
 
 ### Lloyd's Algorithm for KMeans
 * Assign some points to be cluster centers (randomly or using k-means++)
@@ -69,6 +78,7 @@ Examine performance when K-Means assumptions are violated:
 ## Hierarchical Clustering
 * Also known as Agglomerative Clustering
 * Build nested clusters by merging or splitting them successively
+* Generates all possible clusters from 1 to `n` in a `dendrogram`
 
 ## DBSCAN
 * View clusters as area of high density separated by areas of low density
@@ -93,4 +103,4 @@ scikit-learn details:
  * Calinski-Harabaz Index
 
 ## References
-* ?
+* An Introduction to Statistical Learning with Applications in R, Daniela Witten, Gareth James, Robert Tibshirani, and Trevor Hastie, 2013, Chap 10
