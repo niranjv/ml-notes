@@ -62,6 +62,7 @@ My experiments with various ML tools & algorithms
 |--------|-------------|
 | Databricks notebooks | Interactive Jupyter-like notebooks for Spark programming in Python, R, etc. |
 | MLLib | Spark's Scalable machine learning library with interfaces to Python & R |
+| Mahout/Spark | R-like syntax, scalable machine learning algorithms |
 | PySpark | Python interface to Spark |
 | SparkR, `sparklyr` | R package to interface with Spark |
 | Spark on AWS EMR | Run Spark clusters in AWS with access to S3 & Hive |
