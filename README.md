@@ -1,33 +1,50 @@
 My experiments with various ML tools & algorithms
 
-**Contents**
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+# Contents
 
-- [Problem Types](#problem-types)
-- [Tools](#tools)
-	- [Python](#python)
-	- [R](#r)
-	- [Spark](#spark)
-	- [Deep Learning](#deep-learning)
-
-<!-- /TOC -->
+* [Problem Types](#problem-types)
+* [Tools](#tools)
+ * [Data manipulation](#data-manipulation)
+ * [Python](#python)
+ * [R](#r)
+ *  [Spark](#spark)
+ * [Deep Learning](#deep-learning)
 
 # Problem Types
-| |
-| --- |
-| [Frequent Pattern Mining](association-rules) |
-| Classification |
-| [Clustering](clustering) |
-| [Density Estimation](density-estimation) |
-| [Dimensionality Reduction](dimensionality-reduction) |
-| [Recommender Systems](recommender-systems) |
-| [Regression](regression) |
+| Problem type | scikit-learn | PySpark | SparkR |
+| ----- | ----- | ----- | ----- |
+| [Dimensionality Reduction](dimensionality-reduction) | | | |
+| [Density Estimation](density-estimation) | | | |
+| [Clustering](clustering) | | | |
+| Classification | | | |
+| [Regression](regression) | | | |
+| [Frequent Pattern Mining](association-rules) | | | |
+| [Recommender Systems](recommender-systems) | | | |
+
 
 # Tools
 
+## Data manipulation
+| Topic | NumPy | pandas | PySpark | SparkR |
+| ----- | ----- | ----- | ----- | ----- |
+| Creation | [NumPy](numpy/numpy-array-creation.ipynb)  | [pandas](pandas-series-dataframe-creation.ipynb) |  |  |
+| Indexing / Slicing | [NumPy](numpy-indexing-slicing.ipynb) | [pandas](pandas-indexing.ipynb) |  |  |
+| Grouping / Aggregation | [pandas](pandas-grouping-aggregation.ipynb) |  |  |  |
+| Merging / Reshaping | [NumPy](numpy-reshaping.ipynb) | [pandas](pandas-merging-reshaping.ipynb) |  |  |
+| Sorting | [NumPy](numpy-sorting.ipynb) | [pandas](pandas-sorting.ipynb) |  |  |
+| Searching | [NumPy](numpy-search.ipynb) | [pandas]() |  |  |
+| RNG / sampling | [NumPy](numpy-random.ipynb) |  |  |  |
+
+## Bayesian methods
+| Topic | Comments |
+| ----- | ----- |
+| **R:** JAGS, OpenBUGS | Bayesian inference using Gibbs Sampling |
+| **Python:** PyMC | Bayesian statistical model fitting with MCMC |
+| **Stan:** RStan, PyStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML with interfaces to R & Python |
+
 ## Python
-|   |  |
-|--------|-------------|
+| Topic | Comments |
+| ----- | ----- |
 | [NumPy](numpy/) | Efficient storage for large multi-dimensional arrays & vectorized functions operating on these arrays |
 | [pandas](pandas/) | Labeled access to column-oriented data frames & series |
 | [scikit-learn](scikit-learn/) | Machine learning in Python (single machine only) |
@@ -35,7 +52,6 @@ My experiments with various ML tools & algorithms
 | [iPython/Jupyter](jupyter-notes.ipynb) | Notebooks for interactive computing, prototyping and reporting |
 | SciPy | Numerical routines |
 | statsmodels | Statistical models & tests |
-| PyMC | Bayesian statistical model fitting with MCMC |
 | [xgboost](xgboost/) | Scalable gradient boosting (typically used with decision trees) with interfaces to Python & R |
 | Dask | Parallel computing with task scheduling |
 | Numba | Convert Python code to LLVM code that is JIT compiled to machine code |
@@ -43,9 +59,8 @@ My experiments with various ML tools & algorithms
 
 ## R
 
-| | |
-|--------|-------------|
-| RStudio | IDE for R programming |
+| Topic | Comments |
+| ----- | ----- |
 | R notebooks | Interactive R markdown doc with executable chunks (alternative to Jupyter notebooks for R) |
 | data.table | Faster version of data.frame to handle large data sets (100s of GB) |
 | caret | Classification & regression models |
@@ -54,16 +69,16 @@ My experiments with various ML tools & algorithms
 | metrics, MLmetrics | Common evaluation metrics in machine learning  |
 | xgboost | Scalable gradient boosting (typically used with decision trees) with interfaces to Python & R |
 | hadley-verse: dplyr, tidyr, stringr, httpr, knitr, devtools, feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
-| Stan, RStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML with interfaces to R & Python |
 
 ## Spark
 
-| | |
-|--------|-------------|
+| Topic | Comments |
+| ----- | ----- |
 | Databricks notebooks | Interactive Jupyter-like notebooks for Spark programming in Python, R, etc. |
-| MLLib | Spark's Scalable machine learning library with interfaces to Python & R |
-| Mahout/Spark | R-like syntax, scalable machine learning algorithms |
 | PySpark | Python interface to Spark |
+| MLLib | Spark's Scalable machine learning library with interfaces to Python & R |
+| Mahout-on-Spark | R-like syntax, scalable machine learning algorithms |
+| SparkSQL | SQL interface for structured data |
 | SparkR, `sparklyr` | R package to interface with Spark |
 | Spark on AWS EMR | Run Spark clusters in AWS with access to S3 & Hive |
 
@@ -72,7 +87,7 @@ AWS ML - Machine learning as a service for creating and deploying models with su
 ## Deep Learning
 
 | | |
-|--------|-------------|
+| ----- | ----- |
 | Keras + TensorFlow/Theano  | Python package to enable fast experimentation with deep learning frameworks like TensorFlow & Theano on CPUs & GPUs |
 | mxnet | Deep learning library with interfaces to Python & R |
 
