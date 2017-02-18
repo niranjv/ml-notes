@@ -8,19 +8,20 @@ My experiments with various ML tools & algorithms
  * [Bayesian methods](#bayesian-methods)
  * [Python](#python)
  * [R](#r)
- *  [Spark](#spark)
+ * [Spark](#spark)
  * [Deep Learning](#deep-learning)
 
 # Problem Types
-| Problem type | scikit-learn | PySpark | SparkR | R |
+| Problem type | scikit-learn | PySpark-MLlIB | SparkR | R |
 | ----- | ----- | ----- | ----- | ----- |
-| [Dimensionality Reduction](dimensionality-reduction) | | | | |
-| [Density Estimation](density-estimation) | | | | |
-| [Clustering](clustering) | | | | |
+| [Dimensionality Reduction](dimensionality-reduction) | | N/A| | |
+| [Density Estimation](density-estimation) | | KDE | | |
+| [Clustering](clustering) | | KMeans, GMM, PIC| | |
 | Classification | | | | |
 | [Regression](regression) | | | | |
 | [Frequent Pattern Mining](association-rules) | | | | |
 | [Recommender Systems](recommender-systems) | | | | |
+| NLP | | LDA | | `tm` |
 
 
 # Tools
@@ -42,6 +43,13 @@ My experiments with various ML tools & algorithms
 | **R:** JAGS, OpenBUGS | Bayesian inference using Gibbs Sampling |
 | **Python:** PyMC | Bayesian statistical model fitting with MCMC |
 | **Stan:** RStan, PyStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML with interfaces to R & Python |
+
+## NLP
+| Topic | Comments |
+| ----- | ----- |
+| **Python:** NLTK, Spacy, gensim | Tokenization, word vectors, speech tagger, dependency parser |
+| **PySpark:** LDA | Topic modeling |
+| **R:** `tm` | Text mining framework |
 
 ## Python
 | Topic | Comments |
@@ -77,7 +85,8 @@ My experiments with various ML tools & algorithms
 | ----- | ----- |
 | Databricks notebooks | Interactive Jupyter-like notebooks for Spark programming in Python, R, etc. |
 | PySpark | Python interface to Spark |
-| MLLib | Spark's Scalable machine learning library with interfaces to Python & R |
+| MLlib | Spark's Scalable machine learning library with interfaces to Python & R |
+| `spark-sklearn` | Train and evaluate multiple scikit-learn models in parallel with Spark |
 | Mahout-on-Spark | R-like syntax, scalable machine learning algorithms |
 | SparkSQL | SQL interface for structured data |
 | SparkR, `sparklyr` | R package to interface with Spark |
@@ -97,3 +106,4 @@ AWS ML - Machine learning as a service for creating and deploying models with su
 * Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook file or at http://nbviewer.jupyter.org/github/niranjv/ml/
 * [Scikit-learn tutorial](http://nbviewer.jupyter.org/github/jakevdp/sklearn_tutorial/blob/master/notebooks/Index.ipynb)
 * [Data science ipython notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
+* [Databricks blog: SparkR - 10 things](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/8599738367597028/1792412399382575/3601578643761083/latest.html?utm_campaign=Open%20Source&utm_source=Databricks%20Blog)
