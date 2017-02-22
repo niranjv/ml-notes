@@ -93,8 +93,6 @@ My experiments with various ML tools & algorithms
 | SparkR, `sparklyr` | R package to interface with Spark |
 | Spark on AWS EMR | Run Spark clusters in AWS with access to S3 & Hive |
 
-AWS ML - Machine learning as a service for creating and deploying models with support for linear & logistic regression
-
 ## Deep Learning
 
 | | |
