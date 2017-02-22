@@ -1,0 +1,26 @@
+# Problems
+* **Topic modeling**
+ * Approaches: LSA/LSI, pLSA/pLSI, LDA
+ * Tools: gensim, LDA in Spark MLlib,
+* **Sentiment Analysis** - determine emotional status of text
+ * Solutions: Keyword spotting, Binary sentiment analysis
+ * Tools: ?
+* **Summarization** - summarize input text
+ * Solutions: ?
+ * Tools: ?
+* **Names Entity Recognition**
+ * Solutions: ?
+ * Tools: ?
+* **Language detection**
+ * Solutions: n-grams
+ * Tools: ?
+
+# Topics
+## TF-IDF
+* Used to categorize documents
+* Compute importance of terms inside documents
+
+# References
+* [Quora: LDA vs. pLSA ](https://www.quora.com/What-are-the-reasons-to-choose-LDA-over-pLSA-or-vice-versa)
+* [Apache OpenNLP](https://opennlp.apache.org/) - Handles common NLP tasks like tokenization, segmentation, NER, part-of-speech tagging, chunking, parsing, coreference resolution
+* [Apache Tika](https://tika.apache.org/) - content analysis toolkit to extract meta-data from > 1000 file types
