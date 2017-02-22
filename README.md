@@ -10,6 +10,7 @@ My experiments with various ML tools & algorithms
  * [R](#r)
  * [Spark](#spark)
  * [Deep Learning](#deep-learning)
+ * [ML-as-a-Service](#mlaas)
 
 # Problem Types
 | Problem type | scikit-learn | PySpark-MLlIB | SparkR | R |
@@ -100,6 +101,13 @@ AWS ML - Machine learning as a service for creating and deploying models with su
 | ----- | ----- |
 | Keras + TensorFlow/Theano  | Python package to enable fast experimentation with deep learning frameworks like TensorFlow & Theano on CPUs & GPUs |
 | mxnet | Deep learning library with interfaces to Python & R |
+
+## MLaaS
+* [AWS ML](https://aws.amazon.com/machine-learning/)
+* [Azure ML](https://azure.microsoft.com/en-us/services/machine-learning/)
+* [Google Prediction API](https://cloud.google.com/prediction/)
+* [Algorithmia](https://algorithmia.com/)
+* [BigML](https://bigml.com/)
 
 
 **Notes**
