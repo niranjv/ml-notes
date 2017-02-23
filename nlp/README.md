@@ -8,7 +8,13 @@
 * **Summarization** - summarize input text
  * Solutions: ?
  * Tools: ?
-* **Names Entity Recognition**
+* **Named Entity Recognition**
+ * Solutions: ?
+ * Tools: ?
+* **Sequence Modeling**
+ * Solutions: ?
+ * Tools: ?
+* **Part of Speech tagging**
  * Solutions: ?
  * Tools: ?
 * **Language detection**
@@ -23,4 +29,7 @@
 # References
 * [Quora: LDA vs. pLSA ](https://www.quora.com/What-are-the-reasons-to-choose-LDA-over-pLSA-or-vice-versa)
 * [Apache OpenNLP](https://opennlp.apache.org/) - Handles common NLP tasks like tokenization, segmentation, NER, part-of-speech tagging, chunking, parsing, coreference resolution
+* [Stanford Core NLP](http://stanfordnlp.github.io/CoreNLP/) - Java with 3rd party Python interfaces
+* [spaCy](https://spacy.io/) - Python
+* [NLTK](http://www.nltk.org/)
 * [Apache Tika](https://tika.apache.org/) - content analysis toolkit to extract meta-data from > 1000 file types
