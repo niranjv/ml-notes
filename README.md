@@ -7,6 +7,7 @@ My experiments with various ML tools & algorithms
  * [Data manipulation](#data-manipulation)
  * [Bayesian methods](#bayesian-methods)
  * [Python](#python)
+ * [ML pipelines](#ml-pipelines)
  * [R](#r)
  * [Spark](#spark)
  * [Deep Learning](#deep-learning)
@@ -67,8 +68,13 @@ My experiments with various ML tools & algorithms
 | Numba | Convert Python code to LLVM code that is JIT compiled to machine code |
 | Cython | Extend Python with C-like properties to generate C code that can be compiled into machine code with Ahead-Of-Time compilation. |
 
-## R
+## ML pipelines
+| Topic | Comments |
+| ----- | ----- |
+| scikit-learn piplines | ? |
+| Spark ML pipelines | ? | 
 
+## R
 | Topic | Comments |
 | ----- | ----- |
 | R notebooks | Interactive R markdown doc with executable chunks (alternative to Jupyter notebooks for R) |
@@ -81,7 +87,6 @@ My experiments with various ML tools & algorithms
 | hadley-verse: dplyr, tidyr, stringr, httpr, knitr, devtools, feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
 
 ## Spark
-
 | Topic | Comments |
 | ----- | ----- |
 | Databricks notebooks | Interactive Jupyter-like notebooks for Spark programming in Python, R, etc. |
@@ -94,8 +99,7 @@ My experiments with various ML tools & algorithms
 | Spark on AWS EMR | Run Spark clusters in AWS with access to S3 & Hive |
 
 ## Deep Learning
-
-| | |
+| Topic | Comments |
 | ----- | ----- |
 | Keras + TensorFlow/Theano  | Python package to enable fast experimentation with deep learning frameworks like TensorFlow & Theano on CPUs & GPUs |
 | mxnet | Deep learning library with interfaces to Python & R |
