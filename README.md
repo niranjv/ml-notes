@@ -68,7 +68,6 @@ My experiments with various ML tools & algorithms
 | Cython | Extend Python with C-like properties to generate C code that can be compiled into machine code with Ahead-Of-Time compilation. |
 
 ## R
-
 | Topic | Comments |
 | ----- | ----- |
 | R notebooks | Interactive R markdown doc with executable chunks (alternative to Jupyter notebooks for R) |
@@ -81,7 +80,6 @@ My experiments with various ML tools & algorithms
 | hadley-verse: dplyr, tidyr, stringr, httpr, knitr, devtools, feather, testthat, devtools, ggplot2 | Tools for data manipulation, unit testing, package development & plotting |
 
 ## Spark
-
 | Topic | Comments |
 | ----- | ----- |
 | Databricks notebooks | Interactive Jupyter-like notebooks for Spark programming in Python, R, etc. |
@@ -94,7 +92,6 @@ My experiments with various ML tools & algorithms
 | Spark on AWS EMR | Run Spark clusters in AWS with access to S3 & Hive |
 
 ## Deep Learning
-
 | | |
 | ----- | ----- |
 | Keras + TensorFlow/Theano  | Python package to enable fast experimentation with deep learning frameworks like TensorFlow & Theano on CPUs & GPUs |
@@ -111,6 +108,7 @@ My experiments with various ML tools & algorithms
 
 **Notes**
 * Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook file or at http://nbviewer.jupyter.org/github/niranjv/ml/
+* [DMTK](https://www.dmtk.io/)
 * [Scikit-learn tutorial](http://nbviewer.jupyter.org/github/jakevdp/sklearn_tutorial/blob/master/notebooks/Index.ipynb)
 * [Data science ipython notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
 * [Databricks blog: SparkR - 10 things](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/8599738367597028/1792412399382575/3601578643761083/latest.html?utm_campaign=Open%20Source&utm_source=Databricks%20Blog)
