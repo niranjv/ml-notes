@@ -2,6 +2,8 @@
 # Install Python 3.6, if necessary 
 # as specified in https://gist.github.com/niranjv/f80fc1f488afc49845e2ff3d5df7f83b
 
+# Install sqlite, if necessary, to prevent errors while running jupyter notebook
+# sudo yum install sqlite-devel
 
 # clone this git repository
 git clone https://github.com/niranjv/ml-tools-notes.git
