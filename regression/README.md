@@ -63,7 +63,18 @@ Explore regression in scikit-learn, R, Spark MLLib
  
  
  * In multiple linear regression, model coefficient of a covariate represents the average effect on response of increasing the covariate by one unit *while holding all other covariates fixed*
- 
+
+
+### Problems
+
+* **Non-linearity** - Use residual plots to identify non-linearity in relationship between response & covariates (Residuals (Y-axis) vs. Fitted values (X-axis). There should be no discernable pattern. If non-linear pattern exists, use a non-linear transformation like `log(X)`, `sqrt(X)`, `X^2`, etc. on covariates.
+* **Correlated errors** - Std errors for model coefficients assume errors are uncorrelated. If errors are correlated, std errors of model coefficients will be underestimated and confidence/prediction intervals will be incorrectly narrower. usually occurs in time series data. To determine, plot residuals vs. observation (by time). There should be no discernable pattern.
+* **Non-constant variance of errors** - Std errors, confidence intervals & hypothesis tests assume constant variance of errors. Again, plot residuals vs. fitted values. If funnel shape, transform response with concave function like `log(Y)` or `sqrt(Y)`. In other cases, can use weighted least squares.
+* **Outliers** - Outlier := point far from the value predicted by model, i.e., response is unusual given covariates. To find outliers, plot residuals vs. fitted values. Alternatively, plot studentized residuals (residuals / std error) vs. fitted values. Points with |studentized residuals| > 3 are outliers.
+* **High leverage** - Points with unusual values for covariates. Can affect regression line. Use `leverage statistic` to identify high-leverage points. This statistic is always between `1` & `1/n` and average is always `(p+1)/n`. Plot studentized residuals vs. leverage.
+* **Collinearity** - 2 or more covariates are highly correlated. Increases std error of estimates of model coefficients and reduces power of hypothesis tests. Multicollinearity => 3 or more covariates are correlated. Use `variance inflation factor` to detect multicollinearity. To remove collinearity, drop of of the affected covariates or created a new covariates based on collinear covariates.
+
+
 ### References
 * An Introduction to Statistical Learning with Applications in R, James, Witten, Hastie, Tibshirani, Springer, 2017
 
