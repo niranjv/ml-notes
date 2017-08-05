@@ -32,13 +32,13 @@ Explore regression in scikit-learn, R, Spark MLLib
 
 ## Linear Regression
 
-* Is there a relationship between covariates & response?
-* Is the relationship linear?
-* How strong is the relationship between the covariates & response?
-* Which covariates affect response the most?
-* How accurately can we estimate effect of each covariate on the response?
-* How accurately can we predict future response values from new covariates?
-* Are there any interaction effects?
+* **Is there a relationship between covariates & response?** - Fit a multiple linear regression model to the data and test `H_0`: model coefficients for all covariates are 0. Use F-statistic to reject `H_0`.
+* **How strong is the relationship?** - Use `RSE` & `R^2` as a measure of strength of relationship
+* **Which covariates affect response the most?** - Look at p-values of each covariate in the model
+* **Effect of each covariate on the response?** - Look at value of model coefficients. Ideally, 95% CI for model coefficient should be narrow and far from 0. Collinearity can affect width of this interval, so look at `VIF` scores also.
+* **How accurately can we predict future response values from new covariates?** - For mean response, use confidence interval. To predict response for a set of covariates, use prediction interval (will always be wider than CI due to irreducible error). 
+* **Is the relationship linear?** Look at plots of (studentized) residuals vs. fitted values. Transform response or predictors to remove non-linearity
+* **Any interaction effects?** Include interaction term and look at its p-value. Also examine increase in `R^2` and decrease in `RSE` of model.
 
 ### Assessing accuracy of coefficient estimates
 
@@ -74,9 +74,14 @@ Explore regression in scikit-learn, R, Spark MLLib
 * **High leverage** - Points with unusual values for covariates. Can affect regression line. Use `leverage statistic` to identify high-leverage points. This statistic is always between `1` & `1/n` and average is always `(p+1)/n`. Plot studentized residuals vs. leverage.
 * **Collinearity** - 2 or more covariates are highly correlated. Increases std error of estimates of model coefficients and reduces power of hypothesis tests. Multicollinearity => 3 or more covariates are correlated. Use `variance inflation factor` to detect multicollinearity. To remove collinearity, drop of of the affected covariates or created a new covariates based on collinear covariates.
 
+### Compare to non-parametric regression (like KNN regression)
+* *Parametric* methods like linear regression assume a functional form for `f(X)`. Simplify the process of finding `f(X)` and only a few model coefficients need to be estimated. Can also be easy to interpret some times. But if assumed functional form is wrong, then model fit will be poor. Use parametric method if its form is close to true form of `f(X)`.
+* *Non-parametric* methods do not assume any functional form and are therefore more flexible. But need a lot more data to get a good fit. E.g., K-nearest neighbor regression, where, given `K` and set of covariates `x_0`, get the `K` training data points with covariates closest to `x_0` and average their response to give response for new set of covariates. *Bias-variance trade-off* determines optimal value of `K`.
+* `KNN` regression decreases in performance with increase in number of covariates `p`, since there might be no near neighbors, forcing KNN regression to use covariate sets far from the set for which response needs to be predicted. 
+* Generally, parametric methods will outperform non-parametric methods when there is a small number of data points per covariate. Parametric methods can be easier to interpret even when a large amount of data is available.
 
-### References
-* An Introduction to Statistical Learning with Applications in R, James, Witten, Hastie, Tibshirani, Springer, 2017
+### Ref
+* ISLR, Chapter 3
 
 
 ## Isotonic Regression
