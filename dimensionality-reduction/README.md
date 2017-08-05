@@ -35,10 +35,13 @@
 * PCA when `n` < `p`
 
 ## Principal Components Analysis
+
 * PCA finds a low-dim representation of a dataset that contains as much of the variance of the dataset as possible
 * It is an orthogonal linear transformation that converts a set of possibly correlated features to a smaller set of linearly uncorrelated variables (*Principal Components*), all orthogonal to each other
 * It re-expresses the dataset in the most meaningful basis that will filter out noise and reveal hidden structure (**linear** combination of original basis => change of basis to a new basis). PCs form the orthogonal basis set of the features
+* PC directions are the directions in which the data is most variable
 * Focus of PCA is on variance of features (common & unique) and seeks to reproduce total variance of features; PCs best capture the variance of the features
+* Does not involve response, if available
 
 * Features are always mean-centered before PCA is performed (column-means of design matrix = 0) since we are only interested in variance
 * Better to normalize all features to mean=0, stdev=1 to prevent scaling from affecting PCA
@@ -59,15 +62,23 @@
 * Kernel PCA is used to do non-linear dimensionality reduction
 * Multiple correspondence analysis is an equivalent of PCA for categorical data
 
+* **Applications:**
+ * Visualization of high dimensional data (during EDA)
+ * Discover structure / sub-groups
+ * PC regression - regress on the first `M` PCs instead of all `p` covariates (`M << p`); less noisy results since most of the signal is concentrated in the first few PCs
+
+
 * **Assumptions:**
  * Non-parametric
  * Linearity => change of basis for feature space
  * Large variances => PCs with large variances represent important structure in feature space => high SNR
  * Orthogonal components => Lower redundancy; easy way to calculate *P*
 
+
 * **Solutions:**
   * via Eigenvector decomposition of covariance matrix of features
   * via Singular Value Decomposition of data matrix of features
+
 
 * **Advantages:**
  * Minimize redundancy (based on covariance of feature matrix) by removing correlated features
@@ -76,15 +87,21 @@
  * If data is noisy, running PCA helps to concentrate more of total variance of data in first few PCs, which is proportionally higher than noise variance (which is same as in original data). This increases signal-to-noise ration of of the first few PCs.
  * Useful for visualization
 
+
 * **Disadvantages:**
  * Only removes 2nd order dependencies (which is sufficient for data sets with Gaussian distribution); does not remove higher-order dependencies (in non-Gaussian data); need to use kernel PCA or ICA for this
  * Does not consider response while reducing dimension of features
  * Sensitive to relative scaling of original features
 
+
 * **Implementations**
  * scikit-learn: Exact PCA, Incremental PCA, Kernel PCA, Sparse PCA, Mini Batch Sparse PCA
  * R: `prcomp()`, `princomp()`, `psych.principal()`
  * Spark: `RowMatrix.computePrincipalComponents()` (for matrix with `n >> p` only) & `PCA` for vectors
+ 
+ 
+ * **Ref:**
+  * ISLR, Section 10.2 (PCA)
 
 ## Partial Least Squares
  * Supervised dimensionality reduction
