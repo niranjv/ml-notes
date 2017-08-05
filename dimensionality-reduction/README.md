@@ -100,7 +100,7 @@
   * Spark: `RowMatrix.computePrincipalComponents()` (for matrix with `n >> p` only) & `PCA` for vectors
  
  
- * **Ref:**
+* **Ref:**
   * ISLR, Section 10.2 (PCA)
 
 ## Partial Least Squares
