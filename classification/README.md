@@ -2,8 +2,8 @@
 * [Overview](#overview)
 * [Notebooks](#notebooks)
 * Topics
- * [Bayes Error Rate](#bayes-error-rate)
- * [K-Nearest Neighbors](#k-nearest-neighbors)
+  * [Bayes Error Rate](#bayes-error-rate)
+  * [K-Nearest Neighbors](#k-nearest-neighbors)
  
  ## Bayes error rate:
  * In classification, test error rate is minimized when instance is assigned to most likely class, given its covariates. I.e,. instance with covariate vector `x_0` will be assigned to class `j` for which:
