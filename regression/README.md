@@ -1,16 +1,16 @@
 # Contents
 * [Overview](#overview)
 * [Notebooks](#notebooks)
-
-Approaches
-* LARS
-* Principal Components Regression
-* Bayesian Regression
-* Logistic Regression
-* MARS
-* LOESS
-* Isotonic Regression
-* Stochastic Gradient Descent
+* Topics
+  * [Linear Regression](#linear-regression)
+  * LARS
+  * Principal Components Regression
+  * Bayesian Regression
+  * Logistic Regression
+  * MARS
+  * LOESS
+  * Isotonic Regression
+  * Stochastic Gradient Descent
 
 * [References](#references)
 
@@ -29,6 +29,44 @@ Explore regression in scikit-learn, R, Spark MLLib
 * Logistic regression
 * MARS
 * LOESS
+
+## Linear Regression
+
+* Is there a relationship between covariates & response?
+* Is the relationship linear?
+* How strong is the relationship between the covariates & response?
+* Which covariates affect response the most?
+* How accurately can we estimate effect of each covariate on the response?
+* How accurately can we predict future response values from new covariates?
+* Are there any interaction effects?
+
+### Assessing accuracy of coefficient estimates
+
+* Need to estimate model coefficients s.t. resulting line is as close as possible to the data
+* Most common measure of closeness if `least squares` => estimate model coefficients to minimize `residual sum of squares`
+* Error term in model represents everything that the model does not account for - missing covariates, non-linearity, noise in data, etc. It is usually assumed to be independent of `X`
+* Linear approximation to `f` is `Y = B_0 + B_1* X + e` and defines the `population regression line`. This line is the best linear approximation to the true relationship between `X` and `Y`. 
+* Model coefficients determined by least squares regression determine the `least squares line`
+* Least squares estimates of population mean & model coefficients are unbiased
+* Variance of estimate of mean = `sigma^2/n`, when the observations are all uncorrelated
+* Std errors of population mean & model coefficients ~ avg amount by which estimate differs from true value. Std error formula assumes errors of observations are uncorrelated.
+* Variance of error (`RSS`) is estimated as `residual standard error = sqrt( RSS/(n-2) )`
+* Std errors are used for hypothesis testing, typically between `H_0` (no relationship) vs. `H_1` (some relationship). Calculate t-statistic from std error and compare to t-distribution with `n-2` degrees of freedom to determine how far estimate is from 0. The resulting probability is called `p-value`, i.e., for a given model, assuming null hypothesis, it is the probability of getting a t-statistic value greater than or equal to the  computed t-statistic value due to chance. Reject null hypothesis if p-value < a threshold (typically 0.05).
+
+
+### Assessing accuracy of model
+
+* If model is plausible (i.e., model coefficients have low p-values), quantify extent to which model fits data
+* This typically done using:
+ * Residual standard error (RSE) - this is an estimate of the std deviation of error `e`. `RSE = sqrt(RSS/(n-2)`. It is a measure of lack of fit of the model. Large deviations of estimates from data will result in high RSE. It is measures in units of response.
+ * `R^2` statistic is a measure of model fit, i.e., a measure of the linear relationship between response & predictors, similar to correlation. It is the `proportion of variance explained` by model. Is always between `0` and `1` and independent of scale of response. `R^2 = 1 - (RSS/TSS)`. Good `R^2` value depends on application. For simple linear regression, `R^2` = correlation, but not for multiple linear regression.
+ 
+ 
+ * In multiple linear regression, model coefficient of a covariate represents the average effect on response of increasing the covariate by one unit *while holding all other covariates fixed*
+ 
+### References
+* An Introduction to Statistical Learning with Applications in R, James, Witten, Hastie, Tibshirani, Springer, 2017
+
 
 ## Isotonic Regression
 * Focus here is only on 1-d linear ordered isotonic regression, not general isotonic regression
