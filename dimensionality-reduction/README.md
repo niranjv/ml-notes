@@ -63,16 +63,16 @@
 * Multiple correspondence analysis is an equivalent of PCA for categorical data
 
 * **Applications:**
- * Visualization of high dimensional data (during EDA)
- * Discover structure / sub-groups
- * PC regression - regress on the first `M` PCs instead of all `p` covariates (`M << p`); less noisy results since most of the signal is concentrated in the first few PCs
+  * Visualization of high dimensional data (during EDA)
+  * Discover structure / sub-groups
+  * PC regression - regress on the first `M` PCs instead of all `p` covariates (`M << p`); less noisy results since most of the signal is concentrated in the first few PCs
 
 
 * **Assumptions:**
- * Non-parametric
- * Linearity => change of basis for feature space
- * Large variances => PCs with large variances represent important structure in feature space => high SNR
- * Orthogonal components => Lower redundancy; easy way to calculate *P*
+  * Non-parametric
+  * Linearity => change of basis for feature space
+  * Large variances => PCs with large variances represent important structure in feature space => high SNR
+  * Orthogonal components => Lower redundancy; easy way to calculate *P*
 
 
 * **Solutions:**
@@ -81,23 +81,23 @@
 
 
 * **Advantages:**
- * Minimize redundancy (based on covariance of feature matrix) by removing correlated features
- * Increase signal-to-noise ratio (based on variance of feature matrix)
- * In regression, if large number of possibly correlated features are present, run PCA first and then regress on the first few PCs
- * If data is noisy, running PCA helps to concentrate more of total variance of data in first few PCs, which is proportionally higher than noise variance (which is same as in original data). This increases signal-to-noise ration of of the first few PCs.
- * Useful for visualization
+  * Minimize redundancy (based on covariance of feature matrix) by removing correlated features
+  * Increase signal-to-noise ratio (based on variance of feature matrix)
+  * In regression, if large number of possibly correlated features are present, run PCA first and then regress on the first few PCs
+  * If data is noisy, running PCA helps to concentrate more of total variance of data in first few PCs, which is proportionally higher than noise variance (which is same as in original data). This increases signal-to-noise ration of of the first few PCs.
+  * Useful for visualization
 
 
 * **Disadvantages:**
- * Only removes 2nd order dependencies (which is sufficient for data sets with Gaussian distribution); does not remove higher-order dependencies (in non-Gaussian data); need to use kernel PCA or ICA for this
- * Does not consider response while reducing dimension of features
- * Sensitive to relative scaling of original features
+  * Only removes 2nd order dependencies (which is sufficient for data sets with Gaussian distribution); does not remove higher-order dependencies (in non-Gaussian data); need to use kernel PCA or ICA for this
+  * Does not consider response while reducing dimension of features
+  * Sensitive to relative scaling of original features
 
 
 * **Implementations**
- * scikit-learn: Exact PCA, Incremental PCA, Kernel PCA, Sparse PCA, Mini Batch Sparse PCA
- * R: `prcomp()`, `princomp()`, `psych.principal()`
- * Spark: `RowMatrix.computePrincipalComponents()` (for matrix with `n >> p` only) & `PCA` for vectors
+  * scikit-learn: Exact PCA, Incremental PCA, Kernel PCA, Sparse PCA, Mini Batch Sparse PCA
+  * R: `prcomp()`, `princomp()`, `psych.principal()`
+  * Spark: `RowMatrix.computePrincipalComponents()` (for matrix with `n >> p` only) & `PCA` for vectors
  
  
  * **Ref:**
