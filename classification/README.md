@@ -1,7 +1,7 @@
 # Contents
 * [Overview](#overview)
 * [Notebooks](#notebooks)
-* [References](#references
+* [References](#references)
 
 ## Overview
 Explore classification in scikit-learn, R,Spark MLLib
