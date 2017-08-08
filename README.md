@@ -4,14 +4,14 @@ My experiments with various ML tools & algorithms
 
 * [Problem Types](#problem-types)
 * [Tools](#tools)
- * [Data manipulation](#data-manipulation)
- * [Bayesian methods](#bayesian-methods)
- * [Python](#python)
- * [ML pipelines](#ml-pipelines)
- * [R](#r)
- * [Spark](#spark)
- * [Deep Learning](#deep-learning)
- * [ML-as-a-Service](#mlaas)
+  * [Data manipulation](#data-manipulation)
+  * [Bayesian methods](#bayesian-methods)
+  * [Python](#python)
+  * [ML pipelines](#ml-pipelines)
+  * [R](#r)
+  * [Spark](#spark)
+  * [Deep Learning](#deep-learning)
+  * [ML-as-a-Service](#mlaas)
 
 # Problem Types
 | Problem type | scikit-learn | PySpark-MLlIB | SparkR | R |
