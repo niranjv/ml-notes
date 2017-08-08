@@ -10,4 +10,4 @@ Explore classification in scikit-learn, R,Spark MLLib
 TODO
 
 ## References
-* [Classification](https://github.com/niranjv/ml-notes/wiki/Classification)
+* [Wiki](https://github.com/niranjv/ml-notes/wiki/Classification)
