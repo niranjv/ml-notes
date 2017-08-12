@@ -30,5 +30,7 @@ Explore regression in scikit-learn, R, Spark MLLib
 * `ISLR Fig 8.10`: Test error as a function of # trees for different values of `m`
 * `ISLR Algorithm 8.2`: Implement boosting
 
+* Comparison of `classification error rate`, `Gini index` & `randomization` as metrics for evaluating quality of split during tree growing
+
 ## References
 * [Wiki](https://github.com/niranjv/ml-notes/wiki/Tree-based-Methods)
