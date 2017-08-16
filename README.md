@@ -1,10 +1,5 @@
 My experiments with various ML tools & methods in R, Python & Spark
 
-# Contents
-
-* [Problem Types](#problem-types)
-* [Tools](#tools)
-
 # Problem Types
 * [Regression](regression/)
 * [Classification](classification/)
@@ -15,8 +10,7 @@ My experiments with various ML tools & methods in R, Python & Spark
 * [Recommender Systems](recommender-systems/)
 * [NLP](nlp/)
 
-
-# Tools / Methods
+# Tools
 * [Python](python/)
 * [NumPy](python/numpy)
 * [pandas](python/pandas)
@@ -29,7 +23,7 @@ My experiments with various ML tools & methods in R, Python & Spark
 * Keras / TensorFlow
 * [ML-as-a-Service](mlaas/)
 
-
+# Methods
 * [Tree-based methods](tree-based-methods/)
 * [Bayesian methods](bayesian/)
 * [Deep Learning](deep-learning/)
