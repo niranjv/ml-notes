@@ -3,10 +3,10 @@
 * [Investigations](#investigations)
 * [References](#references)
 
-## Overview
+# Overview
 Explore regression in scikit-learn, R, Spark MLLib
 
-## Investigations
+# Investigations
 * `ESL, Algorithm 15.1`: Implement RF algorithm, compare to `randomForests` in R
 * `ESL, Eq 15.1`: Derive correlation for non-independent random variables
 * `ESL, Fig 15.1`: Test error for RF, bagging, gradient boosting as a function of # trees
@@ -30,7 +30,9 @@ Explore regression in scikit-learn, R, Spark MLLib
 * `ISLR Fig 8.10`: Test error as a function of # trees for different values of `m`
 * `ISLR Algorithm 8.2`: Implement boosting
 
-* Comparison of `classification error rate`, `Gini index` & `randomization` as metrics for evaluating quality of split during tree growing
+* Comparison of `classification error rate`, `Gini index` & `randomization` as metrics for evaluating quality of split during tree growing for classification
+* Handle missing values for 1 or more covariates in decision trees / bagging / random forests / boosting
+* Handle sparse features (with numerous possible levels)
 
-## References
+# References
 * [Wiki](https://github.com/niranjv/ml-notes/wiki/Tree-based-Methods)
