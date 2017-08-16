@@ -39,19 +39,6 @@ My experiments with various ML tools & algorithms
 | Searching | [NumPy](numpy-search.ipynb) | [pandas]() |  |  |
 | RNG / sampling | [NumPy](numpy-random.ipynb) |  |  |  |
 
-## Bayesian methods
-| Topic | Comments |
-| ----- | ----- |
-| **R:** JAGS, OpenBUGS | Bayesian inference using Gibbs Sampling |
-| **Python:** PyMC | Bayesian statistical model fitting with MCMC |
-| **Stan:** RStan, PyStan | Bayesian inference with Hamiltonian Monte Carlo, variational inference & penalized ML with interfaces to R & Python |
-
-## Bayesian networks, Probabilistic Graphical Models
-| Topic | Comments |
-| ----- | ----- |
-| **R:** `bnlearn` | Learn structure of Bayesian networks, estimate parameters, do inference |
-| **Python:** `bayespy`, `bayesian-belief-networks` |  |
-
 ## NLP
 | Topic | Comments |
 | ----- | ----- |
