@@ -4,7 +4,7 @@
 * [References](#references)
 
 ## Overview
-Explore classification in scikit-learn, R,Spark MLLib
+Explore classification in scikit-learn, R, Spark MLLib
 
 ## Notebooks
 TODO
