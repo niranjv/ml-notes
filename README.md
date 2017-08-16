@@ -1,4 +1,4 @@
-My experiments with various ML tools & algorithms
+My experiments with various ML tools & methods in R, Python & Spark
 
 # Contents
 
@@ -29,16 +29,7 @@ My experiments with various ML tools & algorithms
 * Keras / TensorFlow
 * [ML-as-a-Service](mlaas/)
 
----
 
 * [Tree-based methods](tree-based-methods/)
 * [Bayesian methods](bayesian/)
 * [Deep Learning](deep-learning/)
-
-
-**Notes**
-* Rendered Jupyter notebooks can be viewed on GitHub by clicking on the notebook file or at http://nbviewer.jupyter.org/github/niranjv/ml/
-* [DMTK](https://www.dmtk.io/)
-* [Scikit-learn tutorial](http://nbviewer.jupyter.org/github/jakevdp/sklearn_tutorial/blob/master/notebooks/Index.ipynb)
-* [Data science ipython notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
-

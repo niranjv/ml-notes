@@ -5,3 +5,7 @@ scikit-learn Clustering details:
 * `fit()` - fit model to data & determine model parameters
 * `labels_` - return learned clusters for training data
 * `predict()` - predict clusters for new data. Not available for all algorithms (in which case use `fit_predict()`)
+
+
+Ref: 
+* [Scikit-learn tutorial](http://nbviewer.jupyter.org/github/jakevdp/sklearn_tutorial/blob/master/notebooks/Index.ipynb)
