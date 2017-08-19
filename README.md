@@ -27,3 +27,7 @@ My experiments with various ML tools & methods in R, Python & Spark
 * [Tree-based methods](tree-based-methods/)
 * [Bayesian methods](bayesian/)
 * [Deep Learning](deep-learning/)
+
+# References
+* [Data Science Delivered](https://github.com/ianozsvald/data_science_delivered)
+* [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
