@@ -10,6 +10,7 @@ Explore Machine Learning-as-a-Service offerings
 * [AWS ML](https://aws.amazon.com/machine-learning/)
 * [Azure ML](https://azure.microsoft.com/en-us/services/machine-learning/)
 * [Google Prediction API](https://cloud.google.com/prediction/)
+* [DataRobot](https://datarobot.com)
 * [Algorithmia](https://algorithmia.com/)
 * [BigML](https://bigml.com/)
 
