@@ -1,5 +1,8 @@
 My experiments with various ML tools & methods in R, Python & Spark
 
+# Wiki
+* https://github.com/niranjv/ml-notes/wiki 
+
 # Methods
 * [Regression](regression/)
 * [Classification](classification/)
