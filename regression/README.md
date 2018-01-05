@@ -13,5 +13,12 @@ Explore regression in scikit-learn, R, Spark MLLib
 * OLS vs. Principal Components Regression vs. Partial Least Squares Regression vs. Ridge Regression
 * Show variance of covariates has no effect (i.e., multiplying covariate by `c` will result in coefficient multiplied by `1/c`)
 
+* Zero-inflated models (Poisson, Negative Binomial, Binomial)
+* Bayesian zero-inflated models
+
+* Group Lasso regression
+* Group Ridge regression
+* Bayesian penalized regression
+
 # References
 * [Wiki](https://github.com/niranjv/ml-notes/wiki/Regression)

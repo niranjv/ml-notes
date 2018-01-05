@@ -12,6 +12,8 @@ Explore classification in scikit-learn, R, Spark MLLib
 * `ISLR, Fig 4.3`: Reproduce plot showing effect of confounding
 * `ISLR, Section 4.3.5`: Work through example of multi-class Logistic Regression
 
+* `ISLR, Eq 4.13`: Derive from `Eq 4.12`
+* `ISLR, Fig 4.4`: Reproduce plot showing LDA decision boundary for 2 sample classes
 
 # References
 * [Wiki](https://github.com/niranjv/ml-notes/wiki/Classification)
